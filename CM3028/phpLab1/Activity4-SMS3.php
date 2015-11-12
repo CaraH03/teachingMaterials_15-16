@@ -17,20 +17,20 @@
 
 $myArray = array("specs", "mugs", "sausage rolls");
 
-printmyArray();
+printmyArray($myArray);
 
 $myArray[1] = "hugs"; // modifies position 1 (re)
 
-printmyArray();
+printmyArray($myArray);
 
 unset($array[2]); // removes the array in position 2
 
-printmyArray();
+printmyArray($myArray);
 
 
 
 //I've made a function to print out the array instead of writing the same code repeatedly above.
-function printmyArray()
+function printmyArray($myArray)
 {
     foreach($myArray as $x) {
         echo "<p>" . $x . "</p>";

@@ -12,7 +12,7 @@ E.g. if $wantedgood = “mugs” then the system would print “You have to be 1
 
 $wantedgood = "mugs";
 
-switch ($wantedgoods) {
+switch ($wantedgood) {
     case "specs":
         echo "You have to be 16 to buy specs";
         break;
