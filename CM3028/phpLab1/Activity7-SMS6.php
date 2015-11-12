@@ -19,7 +19,7 @@ $lotteryArray = array("Mike", "John", "Mark", "Angela", "Roger", "Chrisina", "Su
 sort($lotteryArray);
 
 //Select the winner
-$winner = rand(0,count($lotteryArray));
+$winner = (rand(0,count($lotteryArray))) - 1;
 
 //Prints the winner
 echo "<p>The winner of all the specs is " . strtoupper($lotteryArray[$winner]) . "</p>";
@@ -28,12 +28,12 @@ echo "<p>The winner of all the specs is " . strtoupper($lotteryArray[$winner]) .
 unset($array[$winner]);
 
 //Do the same again for mugs
-$winner = rand(0,count($lotteryArray));
+$winner = (rand(0,count($lotteryArray))) - 1;
 echo "<p>The winner of all the mugs is " . strtoupper($lotteryArray[$winner]) . "</p>";
 unset($array[$winner]);
 
 //and the sausuage rolls
-$winner = rand(0,count($lotteryArray));
+$winner = (rand(0,count($lotteryArray))) - 1;
 echo "<p>The winner of all the sausage rolls is " . strtoupper($lotteryArray[$winner]) . "</p>";
 
 ?>
