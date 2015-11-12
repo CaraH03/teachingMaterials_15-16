@@ -12,7 +12,7 @@ $lastname = $_POST["lastname"];
 $dob = $_POST["dob"];
 $gender = $_POST["gender"];
 $canfly = $_POST["canfly"];
-$zappy = $_POST["zappy"];
+$zappy = $_POST["zapper"];
 $sarcasm = $_POST["sarcasm"];
 
 echo "Superhero is called: " . $firstname . " " . $lastname ."<br>";
