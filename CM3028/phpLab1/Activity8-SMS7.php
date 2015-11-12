@@ -27,7 +27,7 @@ function printWantedBanner($name, $specsOwned, $mugsOwned, $sausageRollsOwned)
     echo "<p>Specs: " . $specsOwned . "</p>";
     echo "<p>Mugs:" . $mugsOwned . "</p>";
     echo "<p>Sausage Rolls: " . $sausageRollsOwned . "</p>";
-    echo "<p>Award for capture: " . awardForCapture($specsOwned,$mugsOwned,$sausageRollsOwned) . "</p>";
+    echo "<p>Award for capture: £" . awardForCapture($specsOwned,$mugsOwned,$sausageRollsOwned) . "</p><br><br>";
 
 }
 
