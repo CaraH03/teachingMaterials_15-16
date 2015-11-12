@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<? $planet = $_GET["planet"]; ?>
+<? $planet = $_GET["planet"];  ?>
 
 <p>Hello <? echo $planet; ?></p>
 </body>
