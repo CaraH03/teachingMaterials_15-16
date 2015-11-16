@@ -12,4 +12,9 @@ body {
 }
 nav {
     background-color: #C6E5D9;
+    padding-bottom: 15px;
+    font-family:
 }
+
+#navHighlight
+{ font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
