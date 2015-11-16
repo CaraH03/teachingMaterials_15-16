@@ -53,13 +53,11 @@ main>section>article>p {
     font-size: small;
 }
 
-nav>ul {
-    float: right;
-}
 nav>ul>li {
     list-style-type:none;
     display: inline;
-    padding: 0 15px 5px 15px;
+    padding: 0 15px 10px 15px;
+    text-align: center;
 }
 
 nav>ul>li>a {
@@ -67,16 +65,20 @@ nav>ul>li>a {
     font-family: 'Open Sans', serif;
     font-weight: 200;
     color: #CE0032;
+    font-size: 92%;
 }
 
 #navHighlight {
     font-family: 'Courgette', cursive;
-    font-size: 125%;
+    font-size: 120%;
     color: #CE0032;
     text-decoration: none;
     border-bottom: 3px #5284C3 dotted;
 }
 
+nav> ul {
+    margin: 5px 0 10px 0;
+}
 a, a:visited, a:active {
 }
 
