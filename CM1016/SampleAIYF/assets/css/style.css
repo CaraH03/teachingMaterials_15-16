@@ -34,6 +34,25 @@ footer {
     color: #f8f4d7
 }
 
+.events {
+    padding-left: 20px;
+}
+
+
+main>section>h2 {
+    font-family: 'Bree Serif', serif;
+}
+
+main>section>article>h3 {
+    font-family: 'Bree Serif', serif;
+    color: #CE0032;
+}
+
+main>section>article>p {
+    font-family: 'Open Sans', serif;
+    font-size: small;
+}
+
 nav>ul {
     float: right;
 }
@@ -78,10 +97,14 @@ footer>section>h2 {
     font-family: 'Open Sans', serif;
     font-weight: 200;
     color: #5284C3;
-    font-size: small;
+    font-size: 70%;
 }
 
 footer>section>p {
     font-family: 'Open Sans', serif;
-    font-size: smaller;
+    font-size: 70%;
+}
+
+footer>section {
+    padding-left: 30px;
 }
