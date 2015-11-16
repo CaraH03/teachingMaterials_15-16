@@ -3,18 +3,85 @@ header>h1>a {
     background-image: url(../images/aiyf-logo.png);
     background-repeat: no-repeat;
     height: 50px;
+    margin-left: 40px;
     /* The current AIYF website does this to get rid of the text in the header. Its a bit of a cheaty way of doing it but I'm not going to try and fix it.*/
     text-indent: -9999px;
 }
 
 body {
-    background-color: #F4EAD5;
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
 }
 nav {
-    background-color: #C6E5D9;
-    padding-bottom: 15px;
-    font-family:
+    background-color: #F8F4D7;
+}
+main {
+    background-color: #f2f2f2;
+}
+footer {
+    background-color: #F8F4D7;
 }
 
-#navHighlight
-{ font-family: ‘Metrophobic’, Arial, serif; font-weight: 400; }
+.tickets {
+    background-color: #CE0032;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.tickets>h2 {
+    font-family: 'Josefin Sans', cursive;
+    color: #f8f4d7
+}
+
+nav>ul {
+    float: right;
+}
+nav>ul>li {
+    list-style-type:none;
+    display: inline;
+    padding: 0 15px 5px 15px;
+}
+
+nav>ul>li>a {
+    text-decoration:none;
+    font-family: 'Open Sans', serif;
+    font-weight: 200;
+    color: #CE0032;
+}
+
+#navHighlight {
+    font-family: 'Courgette', cursive;
+    font-size: 125%;
+    color: #CE0032;
+    text-decoration: none;
+    border-bottom: 3px #5284C3 dotted;
+}
+
+a, a:visited, a:active {
+}
+
+nav>ul>li> a:hover  {
+    text-decoration: none;
+    border-bottom: 3px #5284C3 solid;
+}
+
+#footerHighlight {
+    font-family: 'Courgette', cursive;
+    font-size: 110%;
+    color: #5284C3;
+    text-decoration: none;
+    border-bottom: 3px #CE0032 dotted;
+}
+footer>section>h2 {
+    text-decoration:none;
+    font-family: 'Open Sans', serif;
+    font-weight: 200;
+    color: #5284C3;
+    font-size: small;
+}
+
+footer>section>p {
+    font-family: 'Open Sans', serif;
+    font-size: smaller;
+}
