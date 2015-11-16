@@ -21,25 +21,22 @@ nav a {
 
 /* Primary Navigation */
 
-ul#primary-navigation{
+nav>ul{
     position:absolute;
     bottom:0px;
     margin-left:9px;
     font-size:1.3em}
 
-ul#primary-navigation li{
+nav>ul>li{
     float:left;
     border-right:1px #ccc dotted}
 
-ul#primary-navigation li a{
+nav>ul>li>a{
     padding:6px 12px 6px 12px;
     display:block;
     color:#999999}
 
-ul#primary-navigation li.current-page a{
-    color:#333}
-
-ul#primary-navigation ul{
+nav>ul {
     position:absolute;
     font-size:1em;
     display: none;
