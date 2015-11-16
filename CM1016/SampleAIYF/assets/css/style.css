@@ -1,4 +1,5 @@
 header>h1>a {
+    display: block;
     background-image: url(../images/aiyf-logo.png);
     background-repeat: no-repeat;
     height: 100%;
