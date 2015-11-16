@@ -3,7 +3,6 @@ header>h1>a {
     background-image: url(../images/aiyf-logo.png);
     background-repeat: no-repeat;
     height: 240px;
-    width: 100%;
     /* The current AIYF website does this to get rid of the text in the header. Its a bit of a cheaty way of doing it but I'm not going to try and fix it.*/
     text-indent: -9999px;
 }
