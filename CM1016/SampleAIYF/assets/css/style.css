@@ -6,3 +6,10 @@ header>h1>a {
     /* The current AIYF website does this to get rid of the text in the header. Its a bit of a cheaty way of doing it but I'm not going to try and fix it.*/
     text-indent: -9999px;
 }
+
+body {
+    background-color: #F4EAD5;
+}
+nav {
+    background-color: #C6E5D9;
+}
