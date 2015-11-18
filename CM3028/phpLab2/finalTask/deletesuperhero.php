@@ -12,5 +12,5 @@ $db = new mysqli(
 $sql = "DELETE FROM superherotask WHERE index='$superheroID'";
 $result = $db->query($sql);
 
-header('Location: displaySuperheros.php');
+//header('Location: displaySuperheros.php');
 ?>
