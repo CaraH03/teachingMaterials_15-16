@@ -11,10 +11,8 @@ $sarcasm = $_POST["sarcasm"];
 $sql = "INSERT INTO superherotask  (firstName, lastName, dob, gender, fly, zap, sarcastic)
  VALUES ('$firstname ', '$lastname', '$dob', '$gender', '$canfly', '$zappy', '$sarcasm')";
 
-if ($result = $db->query($sql)) {
-    print("Added");
-}
+$result = $db->query($sql)
 
-//header('Location: index.html');
+header('Location: index.html');
 
 ?>
