@@ -21,7 +21,7 @@ if (!$db) {
 
 // create a SQL query as a string
 
-$sql_query = "SELECT * FROM marvelmovies";
+$sql_query = "SELECT * FROM superherotask";
 
 // execute the SQL query
 
