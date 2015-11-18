@@ -1,6 +1,5 @@
 <?php
 $superheroID = $_GET["id"];
-echo $superheroID;
 $db = new mysqli(
     "eu-cdbr-azure-west-c.cloudapp.net",
     "b0c2ff384f05bb",
@@ -12,5 +11,5 @@ $db = new mysqli(
 $sql = "DELETE FROM superherotask WHERE heroID='$superheroID'";
 $result = $db->query($sql);
 
-//header('Location: displaySuperheros.php');
+header('Location: displaySuperheros.php');
 ?>
