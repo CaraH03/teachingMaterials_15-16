@@ -30,10 +30,24 @@ $result = $db->query($sql_query);
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
 
+echo "<p><strong>All Movies: </strong>";
+
 while($row = $result->fetch_array()){
    // print out fields from row of data
-   echo "<p>" . $row['title'] . "</p>";
+  echo $row['title'] . " ";
 }
+echo "</p>";
+
+$sql_query = "SELECT * FROM marvelmovies where yearReleased < 2010";
+$result = $db->query($sql_query);
+echo "<p><strong>Before 2010: </strong>";
+while($row = $result->fetch_array()){
+    // print out fields from row of data
+    echo $row['title'] . " ";
+}
+echo "</p>";
+
+
 
 $result->close();
    // close connection to database
