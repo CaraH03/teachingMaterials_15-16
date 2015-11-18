@@ -29,9 +29,7 @@ $result = $db->query($sql_query);
 
 // iterate over $result object one $row at a time
 // use fetch_array() to return an associative array
-
-echo "<p><strong>All Movies: </strong>";
-
+echo "<h1>List of Superheroes</h1>";
 while($row = $result->fetch_array()){
     $firstName = $row['FirstName'];
     $lastName = $row['LastName'];
@@ -40,12 +38,11 @@ while($row = $result->fetch_array()){
     $fly = $row['fly'];
     $zap = $row['zap'];
     $sarcastic = $row['sarcastic'];
-
-
-    echo "<p>" . $firstName . " " . $lastName . " is a " . $gender . " superhero born on " . $DOB;
+    echo "<p>" . $firstName . " " . $lastName . " is a " . $gender . " superhero born on " . $DOB . " ";
+    echo "<a href=\"deletesuperhero.php?id=".$row['index']."\">Delete</a>";
 }
-echo "</p>";
 
+//in the interest of
 
 
 
