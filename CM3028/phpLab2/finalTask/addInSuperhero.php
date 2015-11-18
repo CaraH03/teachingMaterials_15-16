@@ -9,7 +9,10 @@ $zappy = $_POST["zapper"];
 $sarcasm = $_POST["sarcasm"];
 
 $sql = "INSERT INTO superherotask VALUES (firstName = '$firstname ', lastname = '$lastname', dob = '$dob', gender = '$gender', fly = '$canfly', zap = '$zappy', sarcastic = '$sarcasm')";
-$result = $db->query($sql);
+
+if ($result = $db->query($sql)) {
+    print("Added");
+}
 
 header('Location: index.html');
 
