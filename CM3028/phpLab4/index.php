@@ -15,9 +15,9 @@ include ("db_connect.php");
 </head>
 <body>
 <nav>
+    <p><strong>Information:</strong> I havent styled this page at all so there isn't really a lot going on. It gives you the basic idea of how this works though.</p>
 <!-- Menu Creation -->
     <?
-
     $sql_query = "SELECT * FROM sectionText where topicID = '5'";
     $result = $db->query($sql_query);
     while($row = $result->fetch_array()){
