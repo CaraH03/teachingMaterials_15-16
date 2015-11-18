@@ -34,7 +34,7 @@ echo "<p><strong>All Movies: </strong>";
 
 while($row = $result->fetch_array()){
    // print out fields from row of data
-  echo $row['title'] . " ";
+  echo $row['title'] . " | ";
 }
 echo "</p>";
 
@@ -43,7 +43,26 @@ $result = $db->query($sql_query);
 echo "<p><strong>Before 2010: </strong>";
 while($row = $result->fetch_array()){
     // print out fields from row of data
-    echo $row['title'] . " ";
+    echo $row['title'] . " | ";
+}
+echo "</p>";
+
+$sql_query = "SELECT * FROM marvelmovies where productionStudio liek 'Marvel Studios'";
+$result = $db->query($sql_query);
+echo "<p><strong>Marvel: </strong>";
+while($row = $result->fetch_array()){
+    // print out fields from row of data
+    echo $row['title'] . " | ";
+}
+echo "</p>";
+
+
+$sql_query = "SELECT * FROM marvelmovies where yearReleased > 2010";
+$result = $db->query($sql_query);
+echo "<p><strong>After 2010: </strong>";
+while($row = $result->fetch_array()){
+    // print out fields from row of data
+    echo $row['title'] . " | ";
 }
 echo "</p>";
 
