@@ -33,8 +33,8 @@ $result = $db->query($sql_query);
 echo "<p><strong>All Movies: </strong>";
 
 while($row = $result->fetch_array()){
-    $firstName = $row['firstName'];
-    $lastName = $row['firstName'];
+    $firstName = $row['FirstName'];
+    $lastName = $row['LastName'];
     $gender = $row['gender'];
     $DOB = $row['DOB'];
     $fly = $row['fly'];
