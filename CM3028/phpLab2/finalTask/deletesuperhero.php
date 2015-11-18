@@ -9,7 +9,7 @@ $db = new mysqli(
 );
 
 // Delete
-$sql = "DELETE FROM superherotask WHERE index='$superheroID'";
+$sql = "DELETE FROM superherotask WHERE heroID='$superheroID'";
 $result = $db->query($sql);
 
 //header('Location: displaySuperheros.php');

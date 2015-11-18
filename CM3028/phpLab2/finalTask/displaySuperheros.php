@@ -39,7 +39,7 @@ while($row = $result->fetch_array()){
     $zap = $row['zap'];
     $sarcastic = $row['sarcastic'];
     echo "<p>" . $firstName . " " . $lastName . " is a " . $gender . " superhero born on " . $DOB . " ";
-    echo "<a href=\"deletesuperhero.php?id=".$row['index']."\">Delete</a>";
+    echo "<a href=\"deletesuperhero.php?id=".$row['heroID']."\">Delete</a>";
 }
 
 //in the interest of
