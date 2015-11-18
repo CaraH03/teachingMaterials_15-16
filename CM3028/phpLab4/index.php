@@ -24,6 +24,22 @@ include ("db_connect.php");
         echo "<li><a href=\"index.php?sectionID?=". $row['sectionID']."\">".$row['sectionName']."</a>";
     }
 ?>
-
-
 </nav>
+<?
+
+$sectionID = $_GET[sectionID];
+$mainQuery = "SELECT * FROM sectionText where sectionID = '$sectionID'";
+$result = $db->query($sql_query);
+while($row = $result->fetch_array()) {
+    $sectionName = $row['sectionName'];
+    $sectionText = $row['sectionText'];
+}
+?>
+<main>
+    <header>
+        <h1><? echo $sectionName; ?></h1>
+    </header>
+</main>
+    <section>
+        <p><? echo $sectionText; ?></p>
+    </section>
