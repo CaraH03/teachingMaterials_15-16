@@ -8,12 +8,13 @@ $canfly = $_POST["canfly"];
 $zappy = $_POST["zapper"];
 $sarcasm = $_POST["sarcasm"];
 
-$sql = "INSERT INTO superherotask VALUES (firstName = '$firstname ', lastname = '$lastname', dob = '$dob', gender = '$gender', fly = '$canfly', zap = '$zappy', sarcastic = '$sarcasm')";
+$sql = "INSERT INTO superherotask  (firstName, lastName, dob, gender, fly, zap, sarcastic)
+ VALUES ('$firstname ', '$lastname', '$dob', '$gender', '$canfly', '$zappy', '$sarcasm')";
 
 if ($result = $db->query($sql)) {
     print("Added");
 }
 
-header('Location: index.html');
+//header('Location: index.html');
 
 ?>
