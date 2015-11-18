@@ -21,7 +21,7 @@ include ("db_connect.php");
     $sql_query = "SELECT * FROM sectionText where topicID = '5'";
     $result = $db->query($sql_query);
     while($row = $result->fetch_array()){
-        echo "<li><a href='index.php?sectionID?=". $row['sectionID'].">".$row['sectionName']."</a>";
+        echo "<li><a href=\"index.php?sectionID?=". $row['sectionID']."\">".$row['sectionName']."</a>";
     }
 ?>
 
