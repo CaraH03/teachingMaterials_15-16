@@ -47,7 +47,7 @@ while($row = $result->fetch_array()){
 }
 echo "</p>";
 
-$sql_query = "SELECT * FROM marvelmovies where productionStudio liek 'Marvel Studios'";
+$sql_query = "SELECT * FROM marvelmovies where productionStudio like 'Marvel Studios'";
 $result = $db->query($sql_query);
 echo "<p><strong>Marvel: </strong>";
 while($row = $result->fetch_array()){
