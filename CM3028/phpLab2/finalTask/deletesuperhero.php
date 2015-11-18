@@ -1,5 +1,6 @@
 <?php
 $superheroID = $_GET["id"];
+echo $superheroID;
 $db = new mysqli(
     "eu-cdbr-azure-west-c.cloudapp.net",
     "b0c2ff384f05bb",
