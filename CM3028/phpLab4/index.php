@@ -29,8 +29,8 @@ include ("db_connect.php");
 
 $sectionID = $_GET[sectionID];
 $mainQuery = "SELECT * FROM sectionText where sectionID = '$sectionID'";
-$result = $db->query($sql_query);
-while($row = $result->fetch_array()) {
+$mainResult = $db->query($mainQuery);
+while($row = $mainResult->fetch_array()) {
     $sectionName = $row['sectionName'];
     $sectionText = $row['sectionText'];
 }
