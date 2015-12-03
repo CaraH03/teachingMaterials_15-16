@@ -121,7 +121,7 @@ section>img {
 }
 
 .pagetitle {
-    padding-top: 10px;
+    padding-top: 10px !important;
     padding-bottom: 10px;
 }
 .pagetitle>h2 {
