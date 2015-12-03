@@ -34,6 +34,10 @@ footer {
     color: #f8f4d7
 }
 
+h2{
+    font-family: 'Josefin Sans', cursive;
+
+}
 .events {
     padding-left: 20px;
 }
@@ -109,4 +113,27 @@ footer>section>p {
 
 footer>section {
     padding-left: 30px;
+}
+
+section>img {
+    width:100%;
+
+}
+
+.pagetitle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.pagetitle>h2 {
+    font-family: 'Josefin Sans', cursive;
+    color: #CE0032;
+}
+
+label {
+    font-family: 'Open Sans', serif;
+
+}
+
+p {
+    font-family: 'Open Sans', serif;
 }
