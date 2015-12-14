@@ -42,6 +42,7 @@ if($count==1){
 }
 else {
     echo "Wrong Username or Password";
+    echo "This changed";
 }
 ob_end_flush();
 ?>
