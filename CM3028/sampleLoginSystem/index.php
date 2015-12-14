@@ -24,7 +24,7 @@ if (isset($_SESSION['username']))
 else
 {
     //SESSION DOES EXIST
-    echo "Hello " . $session['username'];
+    echo "Hello " . $_SESSION['username'];
 }
 
 
