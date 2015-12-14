@@ -13,14 +13,14 @@ include ("db_connect.php");
 if (isset($_SESSION['username']))
 {
 //SESSION DOES EXIST
-    echo "Hello " . $_SESSION['username'];
+    echo "<p>Hello " . $_SESSION['username'] . "</p>";
 
     $sql = "SELECT * FROM users WHERE username='". $_SESSION['username'] . "'";
     $result = $db->query($sql);
 
     while($row = $result->fetch_array())
     {
-    echo "User type is " . $row['userType'];
+    echo "<p>User type is " . $row['userType'] . "</p>";
     }
 
     ?>
