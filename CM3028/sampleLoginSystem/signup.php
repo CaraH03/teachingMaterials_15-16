@@ -11,7 +11,7 @@
         <p><input type="text" name="username" value="" placeholder="Username"></p>
         <p><input type="text" name="email" value="" placeholder="eMail"></p>
         <p><input type="password" name="password" value="" placeholder="Password"></p>
-        <p><input type="password" name="password" value="" placeholder="Confirm Password"></p>
+        <p><input type="password" name="passwordcheck" value="" placeholder="Confirm Password"></p>
         <p class="submit"><input type="submit" name="commit" value="Login"></p>
     </form>
 
