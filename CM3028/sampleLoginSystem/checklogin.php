@@ -27,7 +27,7 @@ $sql="SELECT * FROM users WHERE username='$username' and password='$password'";
 $result = mysqli_query($sql);
 
 //COUNT THE NUMBER OF RESULTS
-$count=mysql_num_rows($result);
+$count=mysqli_num_rows($result);
 
 
 // If result matched $username and $password, table row must be 1 row
