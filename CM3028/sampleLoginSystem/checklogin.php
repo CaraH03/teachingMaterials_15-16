@@ -13,12 +13,18 @@ include ("db_connect.php");
 $username = $POST_["username"];
 $password = $POST_["password"];
 
+
 //MYSQL INJECTION PROTECTION
 $username = stripslashes($username);
 $password = stripslashes($password);
 
 $username = mysqli_real_escape_string($username);
 $password = mysqli_real_escape_string($password);
+
+
+
+echo $username;
+echo $password;
 
 //FIND THE USER IN THE DATABASE
 $sql="SELECT * FROM users WHERE username='". $username ."' and password='". $password . "'";
