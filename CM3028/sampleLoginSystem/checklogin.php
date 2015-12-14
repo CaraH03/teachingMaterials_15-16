@@ -27,11 +27,16 @@ $sql="SELECT * FROM users WHERE username='$username' and password='$password'";
 $result = $db->query($sql);
 
 
-//COUNT THE NUMBER OF RESULTS
-$count=mysqli_num_rows($result);
+
+$loginSuccessful = 0;
+while($row = $result->fetch_array()) {
+    $loginSuccessful = 1;
+}
+
+
 
 // If result matched $username and $password, table row must be 1 row
-if($count==1){
+if($loginSuccessful==1){
 
 // Register $myusername, $mypassword and redirect to file "login_success.php"
     echo "User Exists in Database";
