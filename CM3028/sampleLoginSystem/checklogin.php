@@ -24,11 +24,11 @@ $password = mysqli_real_escape_string($password);
 $sql="SELECT * FROM users WHERE username='$username' and password='$password'";
 
 //RUN THE QUERY
-$result = mysqli_query($sql);
+$result = $db->query($sql);
+
 
 //COUNT THE NUMBER OF RESULTS
 $count=mysqli_num_rows($result);
-
 
 // If result matched $username and $password, table row must be 1 row
 if($count==1){
@@ -38,11 +38,17 @@ if($count==1){
     /*
     session_register("myusername");
     session_register("mypassword");
-    header("location:login_success.php"); */
+    header("location:login_success.php");
+    */
 }
 else {
     echo "Wrong Username or Password";
     echo "This changed";
 }
-ob_end_flush();
+
+
+
+
+}
+
 ?>
