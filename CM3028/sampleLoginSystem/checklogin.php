@@ -10,8 +10,8 @@
 include ("db_connect.php");
 
 //GETS THE USERNAME AND PASSWORD FROM PREVIOUS PAGE
-$username = $POST_["username"];
-$password = $POST_["password"];
+$username = $_POST["username"];
+$password = $_POST["password"];
 
 
 //MYSQL INJECTION PROTECTION
