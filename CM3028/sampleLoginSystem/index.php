@@ -16,13 +16,13 @@ if (isset($_SESSION['username']))
     echo "Hello " . $_SESSION['username'];
 
     $sql = "SELECT * FROM users WHERE username='". $_SESSION['username'] . "'";
-   /* $result = $db->query($sql);
+    $result = $db->query($sql);
 
     while($row = $result->fetch_array())
     {
     echo "User type is " . $row['userType'];
     }
-*/
+
     ?>
     <a href="logout.php">Logout</a>
     <?
