@@ -29,6 +29,9 @@ echo $password;
 //FIND THE USER IN THE DATABASE
 $sql="SELECT * FROM users WHERE username='". $username ."' and password='". $password . "'";
 
+
+echo $sql;
+
 //RUN THE QUERY
 $result = $db->query($sql);
 
