@@ -48,7 +48,7 @@ if($loginSuccessful==1){
 }
 else {
     echo "Wrong Username or Password";
-    echo "This changed";
+    echo "This changed again";
 }
 
 ?>
