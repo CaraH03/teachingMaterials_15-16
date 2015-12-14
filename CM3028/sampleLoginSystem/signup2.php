@@ -17,10 +17,11 @@ $email = $_POST["email"];
 
 if ($password==$passwordcheck)
 {
-    $sql = "INSERT INTO users (username, password, email) VALUES ('". $username ."', '" .$password."', '".$email."')";
+    $sql = "INSERT INTO users (username, password, email, userType) VALUES ('". $username ."', '" .$password."', '".$email."', 'reader')";
+
     if (mysqli_query($db, $sql)) {
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        echo "Error: " . $sql . "<br>" . mysqli_error($db);
     }
 
     session_start();
