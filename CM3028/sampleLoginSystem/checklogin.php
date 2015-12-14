@@ -21,7 +21,7 @@ $username = mysqli_real_escape_string($username);
 $password = mysqli_real_escape_string($password);
 
 //FIND THE USER IN THE DATABASE
-$sql="SELECT * FROM $users WHERE username='$username' and password='$password'";
+$sql="SELECT * FROM users WHERE username='$username' and password='$password'";
 
 //RUN THE QUERY
 $result = mysqli_query($sql);
