@@ -26,7 +26,7 @@ if ($password==$passwordcheck)
 
     session_start();
     $_SESSION['username'] = $username;
-    header("location:index.php");
+    //header("location:index.php");
 }
 else
 {
