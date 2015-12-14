@@ -46,9 +46,4 @@ else {
     echo "This changed";
 }
 
-
-
-
-}
-
 ?>
