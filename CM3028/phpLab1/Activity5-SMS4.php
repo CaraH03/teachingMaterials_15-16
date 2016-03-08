@@ -23,7 +23,7 @@ for ($i = 1; $i < 30; $i++)
 
     if ($i % 2 == 0)
     {
-        echo "Sausage Rolls ";
+        echo "Specs ";
         $y = 1;
     }
     if ($i % 3 == 0)
@@ -33,7 +33,7 @@ for ($i = 1; $i < 30; $i++)
     }
     if ($i % 4 == 0)
     {
-        echo "Specs";
+        echo "Sausage Rolls";
         $y = 1;
     }
     if ($y != 1) //if one thing isn't being made on this day then it displays that nothing is available that day.
