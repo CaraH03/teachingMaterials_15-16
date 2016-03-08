@@ -25,12 +25,12 @@ $winner = (rand(0,count($lotteryArray))) - 1;
 echo "<p>The winner of all the specs is " . strtoupper($lotteryArray[$winner]) . "</p>";
 
 //Remove the person from the array
-unset($array[$winner]);
+unset($lotteryArray[$winner]);
 
 //Do the same again for mugs
 $winner = (rand(0,count($lotteryArray))) - 1;
 echo "<p>The winner of all the mugs is " . strtoupper($lotteryArray[$winner]) . "</p>";
-unset($array[$winner]);
+unset($lotteryArray[$winner]);
 
 //and the sausuage rolls
 $winner = (rand(0,count($lotteryArray))) - 1;
