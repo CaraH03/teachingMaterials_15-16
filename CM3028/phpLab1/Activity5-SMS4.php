@@ -36,7 +36,7 @@ for ($i = 1; $i < 30; $i++)
         echo "Specs";
         $y = 1;
     }
-    if ($y == 1) //if one thing isn't being made on this day then it displays that nothing is available that day.
+    if ($y != 1) //if one thing isn't being made on this day then it displays that nothing is available that day.
     {
         echo "NONE";
     }
