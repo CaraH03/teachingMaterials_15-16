@@ -5,10 +5,7 @@ include ("db_connect.php");
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
 
+$sql = "INSERT INTO newusers (firstname, lastname) VALUES ('$firstname', '$lastname')";
 
-echo "Hello {$firstname} {$lastname}! How are you today?";
-
-$sql = "INSERT INTO newusers (firstname, lastname) VALUES ('{$firstname}', '{$lastname}')";
-
-header("location:viewusers.php");
+//header("location:viewusers.php");
 ?>
