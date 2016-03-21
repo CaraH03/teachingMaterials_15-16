@@ -13,7 +13,17 @@
 <main>
     <?
     include ("db_connect.php");
+
+    if (isset($_GET[$superheroID]))
+    {
+        $superheroID = $_GET['superheroID'];
+        $sql_query = "SELECT * FROM superherobattles where superheroID = {$superheroID}";
+    }
+
     $sql_query = "SELECT * FROM superherobattles";
+
+
+
     $result = $db->query($sql_query);
     while($row = $result->fetch_array())
     {
