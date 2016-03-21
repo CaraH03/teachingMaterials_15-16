@@ -19,5 +19,5 @@ if (mysqli_query($db, $sql)) {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
 }
 
-header("location:index.html");
+header("location:index.php");
 ?>

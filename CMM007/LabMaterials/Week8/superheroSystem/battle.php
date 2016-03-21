@@ -8,7 +8,7 @@
 <header>
     <h1>The Super-Superhero System</h1>
     <h2>Record a Battle</h2>
-    <p><a href="index.html">Return to home...</a></p>
+    <p><a href="index.php">Return to home...</a></p>
 </header>
 <main>
     <form action="insertBattle.php" method="post">
