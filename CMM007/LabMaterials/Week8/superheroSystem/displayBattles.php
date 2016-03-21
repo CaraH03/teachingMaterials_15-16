@@ -13,7 +13,7 @@
 <main>
     <?
     include ("db_connect.php");
-
+echo $_GET['superheroID'];
     if (isset($_GET[$superheroID]))
     {
         $superheroID = $_GET['superheroID'];
