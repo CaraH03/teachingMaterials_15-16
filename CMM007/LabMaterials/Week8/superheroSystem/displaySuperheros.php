@@ -17,11 +17,11 @@ $sql_query = "SELECT * FROM superheros";
 $result = $db->query($sql_query);
 while($row = $result->fetch_array())
 {
-    $firstname = $row['firstname'];
-    $lastname = $row['lastname'];
+    $firstname = $row['firstName'];
+    $lastname = $row['lastName'];
     $mainSuperpower = $row['mainSuperpower'];
     echo "<article>
-            <h3> {$firstname} {$lastname} <h3>
+            <h3> {$firstname} {$lastname} </h3>
             <p>This superheros main power is <strong>{$mainSuperpower}</strong></p>
           </article>";
 }
