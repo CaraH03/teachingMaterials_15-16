@@ -19,9 +19,9 @@
         $superheroID = $_GET['superheroID'];
         $sql_query = "SELECT * FROM superherobattles where superheroID = {$superheroID}";
     }
-
+else {
     $sql_query = "SELECT * FROM superherobattles";
-
+}
 
 
     $result = $db->query($sql_query);
