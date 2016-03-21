@@ -17,12 +17,12 @@
         include ("db_connect.php");
         $sql_query = "SELECT * FROM superheros";
         $result = $db->query($sql_query);
-        while($row = $result->fetch_array())
-        {
+        while($row = $result->fetch_array()) {
             $firstname = $row['firstName'];
             $lastname = $row['lastName'];
             $superheroID = $row['superheroID'];
             echo "<option value='{$superheroID}'>{$firstname} {$lastname}</option>";
+        }
         ?>
         </select>
         <input type="text" name="villan" placeholder="Villan Faught"><br>
