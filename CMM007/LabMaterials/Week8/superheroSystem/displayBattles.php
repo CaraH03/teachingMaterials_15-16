@@ -13,9 +13,9 @@
 <main>
     <?
     include ("db_connect.php");
-echo $_GET['superheroID'];
-    if (isset($_GET[$superheroID]))
-    {
+echo $_GET['id'];
+
+    if(isset($_GET['id'])) {
         $superheroID = $_GET['superheroID'];
         $sql_query = "SELECT * FROM superherobattles where superheroID = {$superheroID}";
     }
