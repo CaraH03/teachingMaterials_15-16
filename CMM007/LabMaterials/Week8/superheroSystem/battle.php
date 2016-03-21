@@ -22,7 +22,7 @@
             $firstname = $row['firstName'];
             $lastname = $row['lastName'];
             $superheroID = $row['superheroID'];
-            echo "<option value=\"{$superheroID}\">{$firstname} {$lastname}</option>";
+            echo "<option value='{$superheroID}'>{$firstname} {$lastname}</option>";
         ?>
         </select>
         <input type="text" name="villan" placeholder="Villan Faught"><br>
