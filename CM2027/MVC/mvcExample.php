@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+</head>
+<body>
+<h1>PHP Program Below!</h1>
+
+
 <?php
 class Model
 {
@@ -47,3 +57,8 @@ if (isset($_GET['action']) && !empty($_GET['action'])) {
 }
 
 echo $view->output();
+
+?>
+
+</body>
+</html>
