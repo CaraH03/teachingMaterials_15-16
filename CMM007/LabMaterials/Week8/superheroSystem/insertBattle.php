@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: michaelcrabb
- * Date: 21/03/2016
- * Time: 14:46
- */
 
 include("db_connect.php");
 
