@@ -14,7 +14,7 @@ class Model
     public $string;
 
     public function __construct(){
-        $this->string = "MVC + PHP = Awesome, click here!";
+        $this->string = "Using PHP in MVC! #winningAtLife";
     }
 
 }
@@ -44,7 +44,7 @@ class Controller
     }
 
     public function clicked() {
-        $this->model->string = "Updated Data, thanks to MVC and PHP!";
+        $this->model->string = "Still winning at life by using the controller to update my Model!";
     }
 }
 
