@@ -39,7 +39,7 @@ class Controller
 }
 
 
-model = new Model();
+$model = new Model();
 $controller = new Controller($model);
 $view = new View($controller, $model);
 
