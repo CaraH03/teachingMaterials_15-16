@@ -8,7 +8,7 @@
 		if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             // execute if requested using HTTP GET Method
 ?>
-<form action="<?{$_SERVER['PHP_SELF']}?>" method="post">
+<form action="<? echo $_SERVER['PHP_SELF'];?>" method="post">
 <label>Forename</label>
 <input type="text" name="forename"><br>
 <label>Surname</label>
