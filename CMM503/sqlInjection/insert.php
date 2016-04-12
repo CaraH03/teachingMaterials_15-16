@@ -2,7 +2,7 @@
 
 include("db_connect.php");
 
-$sbugName = $_POST["bugName"];
+$bugName = $_POST["bugName"];
 $bugComments = $_POST["bugComments"];
 
 $sql = "INSERT INTO softwareBugs (bugName, bugComments) VALUES ('$bugName', '$bugComments')";
