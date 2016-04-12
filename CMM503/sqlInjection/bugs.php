@@ -1,7 +1,7 @@
 <?php
 include('db_connect.php');
 $bugID = $_GET['bugID'];
-$sql_query = "SELECT * FROM softwareBugs WHERE bugID = '".$bugID."'";
+$sql_query = "SELECT * FROM softwareBugs WHERE bugID = '$bugID'";
 
 $result = $db->query($sql_query);
 
@@ -14,3 +14,4 @@ while($row = $result->fetch_array())
 }
 
 ?>
+
