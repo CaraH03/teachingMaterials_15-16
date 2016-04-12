@@ -1,7 +1,7 @@
 <?php
 include('db_connect.php');
-
-$sql_query = "SELECT * FROM softwareBugs WHERE bugID = {$_GET['bugID']}";
+$bugID = $_GET['bugID'];
+$sql_query = "SELECT * FROM softwareBugs WHERE bugID = '".$bugID."'";
 
 while($row = $result->fetch_array())
 {
@@ -10,3 +10,5 @@ while($row = $result->fetch_array())
     echo "<p><strong>Comments:</strong><br>";
     echo "{$row['bugComments']}";
 }
+
+?>
