@@ -1,5 +1,5 @@
 <?php
-
+//test
 include("db_connect.php");
 
 $bugName = $_POST["bugName"];
