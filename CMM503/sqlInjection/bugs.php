@@ -7,8 +7,8 @@ $result = $db->query($sql_query);
 
 while($row = $result->fetch_array())
 {
-    echo "<h4>Bug Name: {$row['bugName']}</h4>";
-    echo "<p>The current bug ID is {$row['bugID']} </p>";
+    echo "<h4>Bug Name: {$row['bugName']}<br>";
+    echo "The current bug ID is {$row['bugID']} </h4>";
     echo "<p><strong>Comments:</strong><br>";
     echo "{$row['bugComments']}";
 }
