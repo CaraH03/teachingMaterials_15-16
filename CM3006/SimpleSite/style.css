@@ -1,0 +1,28 @@
+body {
+    background-color: #1f1f1f;
+}
+
+main {
+    background-color: #dddddd;
+    max-width:960px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+
+}
+
+h1{
+    font-family: 'Bangers', cursive;
+}
+h2{
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+}
+h3{
+    font-family: 'Bangers', cursive;
+}
+p{
+    font-family: 'Hind', sans-serif;
+    font-weight: 400;
+}
