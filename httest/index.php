@@ -8,19 +8,17 @@ $rules = array(
     //
     'aboutus' => "/aboutus",
     'contactus' => "/contactus",
-
     //
     // Additional Information Pages
     //
     'memberofstaff' => "/people/(?'username'[\w\-]+)",
     'researchproject' => "/research/(?'projectID'[\w\-]+)",
     //
-    // Other
+    // Other Examples
     //
     'picture' => "/picture/(?'text'[^/]+)/(?'id'\d+)",    // '/picture/some-text/51'
     'album' => "/album/(?'album'[\w\-]+)",              // '/album/album-slug'
-    'category' => "/category/(?'category'[\w\-]+)",        // '/category/category-slug'
-    'page' => "/page/(?'page'about|contact)",          // '/page/about', '/page/contact'
+    'category' => "/category/(?'category'[\w\-]+)",    // '/category/category-slug'
     'post' => "/(?'post'[\w\-]+)",                     // '/post-slug'
     'home' => "/"                                      // '/'
 );
