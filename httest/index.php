@@ -16,11 +16,13 @@ $rules = array(
     //
     // Other Examples
     //
-    'picture' => "/picture/(?'text'[^/]+)/(?'id'\d+)",    // '/picture/some-text/51'
-    'album' => "/album/(?'album'[\w\-]+)",              // '/album/album-slug'
-    'category' => "/category/(?'category'[\w\-]+)",    // '/category/category-slug'
-    'post' => "/(?'post'[\w\-]+)",                     // '/post-slug'
-    'home' => "/"                                      // '/'
+    // 'picture' => "/picture/(?'text'[^/]+)/(?'id'\d+)",    // '/picture/some-text/51'
+    // 'album' => "/album/(?'album'[\w\-]+)",              // '/album/album-slug'
+    // 'category' => "/category/(?'category'[\w\-]+)",    // '/category/category-slug'
+    // 'post' => "/(?'post'[\w\-]+)",                     // '/post-slug'
+    //
+    // Always put this one last
+     'home' => "/"                                      // '/'
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
