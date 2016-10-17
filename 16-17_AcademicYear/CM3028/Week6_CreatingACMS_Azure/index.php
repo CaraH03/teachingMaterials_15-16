@@ -21,6 +21,10 @@ $rules = array(
     // Home Page
     //
     'home' => "/"
+    //
+    // Style
+    //
+    'style.css' "/style"
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
