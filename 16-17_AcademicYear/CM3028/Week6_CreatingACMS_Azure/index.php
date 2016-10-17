@@ -24,7 +24,6 @@ $rules = array(
     //
     // Style
     //
-    'style.css' "/style"
 );
 
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
