@@ -1,0 +1,24 @@
+header{
+    background-color: #DD4A68;
+}
+
+h1 {
+    font-family: 'Bree Serif', serif;
+    color: #ffffff;
+}
+
+p{
+    font-size: 40px;
+}
+
+#starters{
+    background-color: #7acaff;
+}
+
+.food{
+    color: #dddddd;
+}
+.price{
+    color: #3a6c7e;
+    text-align: right;
+}

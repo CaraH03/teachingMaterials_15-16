@@ -3,7 +3,14 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="b79e07b6-cc48-4f08-8d72-ed7780ca0c4d" name="LaravelBox" url="http://ec2-52-18-252-36.eu-west-1.compute.amazonaws.com/">
-        <fileTransfer host="ec2-52-18-252-36.eu-west-1.compute.amazonaws.com" port="22" privateKey="$USER_HOME$/Documents/AWS/MikeCrabb2.pem" accessType="SFTP" username="ubuntu" keyPair="true">
+        <fileTransfer host="ec2-52-212-156-231.eu-west-1.compute.amazonaws.com" port="22" privateKey="$USER_HOME$/Documents/AWS/MikeCrabb2.pem" accessType="SFTP" username="ubuntu" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="2ef6db8a-38b2-4c97-8cf7-35e34c8466d8" name="personalServer" url="http://176.126.243.44">
+        <fileTransfer host="176.126.243.44" port="22" accessType="SFTP" username="root">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
